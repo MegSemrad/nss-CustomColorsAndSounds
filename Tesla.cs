@@ -13,17 +13,17 @@ namespace CustomColorsAndSounds
 
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} Tesla blazes by you. Mmmmmmmmmm!");
+            Console.WriteLine($"The {MainColor} {nameof(Tesla)} blazes by you. Mmmmmmmmmm!");
         }
 
         public override void Turn(string direction)
         {
-            Console.WriteLine($"The Tesla squeals around a {direction} turn.");
+            Console.WriteLine($"The {nameof(Tesla)} squeals around a {direction} turn.");
         }
 
         public override void Stop()
         {
-            Console.WriteLine($"The {MainColor} Tesla silently stops as if it never moved.");
+            Console.WriteLine($"The {MainColor} {nameof(Tesla)} silently stops as if it never moved.");
         }
     }
 }

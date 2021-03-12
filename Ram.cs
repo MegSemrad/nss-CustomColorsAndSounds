@@ -14,7 +14,7 @@ namespace CustomColorsAndSounds
 
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} Ram growls by you. Rrrrruuuumbbllee!");
+            Console.WriteLine($"The {MainColor} {nameof(Ram)} growls by you. Rrrrruuuumbbllee!");
         }
     }
 }

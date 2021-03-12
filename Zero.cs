@@ -13,7 +13,7 @@ namespace CustomColorsAndSounds
 
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} Zero zips by you. Yeeeooooowwwww!");
+            Console.WriteLine($"The {MainColor} {nameof(Zero)} zips by you. Yeeeooooowwwww!");
         }
     }
 }

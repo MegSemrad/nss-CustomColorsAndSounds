@@ -13,12 +13,12 @@ namespace CustomColorsAndSounds
 
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} Cessna flashes by you like a hurricane. Zzzzzzzoooooom!");
+            Console.WriteLine($"The {MainColor} {nameof(Cessna)} flashes by you like a hurricane. Zzzzzzzoooooom!");
         }
 
         public override void Stop()
         {
-            Console.WriteLine($"The {MainColor} Cessna rolls down the runway for am ile and stops.");
+            Console.WriteLine($"The {MainColor} {nameof(Cessna)} rolls down the runway for am ile and stops.");
         }
     }
 }
