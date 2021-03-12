@@ -1,3 +1,5 @@
+using System;
+
 namespace CustomColorsAndSounds
 {
     public class Ram : Vehicle  // Gas powered truck
@@ -7,6 +9,12 @@ namespace CustomColorsAndSounds
         public void RefuelTank()
         {
             // method definition omitted
+        }
+
+
+        public override void Drive()
+        {
+            Console.WriteLine($"The {MainColor} Ram growls by you. Rrrrruuuumbbllee!");
         }
     }
 }

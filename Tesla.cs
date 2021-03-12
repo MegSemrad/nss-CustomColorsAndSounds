@@ -1,3 +1,5 @@
+using System;
+
 namespace CustomColorsAndSounds
 {
     public class Tesla : Vehicle
@@ -7,6 +9,11 @@ namespace CustomColorsAndSounds
         public void ChargeBattery()
         {
             // method definition omitted
+        }
+
+        public override void Drive()
+        {
+            Console.WriteLine($"The {MainColor} Tesla blazes by you. Mmmmmmmmmm!");
         }
     }
 }
