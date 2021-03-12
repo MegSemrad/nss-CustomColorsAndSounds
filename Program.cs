@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
@@ -33,9 +32,20 @@ namespace CustomColorsAndSounds
             };
 
             fxs.Drive();
+            fxs.Turn("right");
+            fxs.Stop();
+            Console.WriteLine("-------------------------");
             modelS.Drive();
+            modelS.Turn("right");
+            modelS.Stop();
+            Console.WriteLine("-------------------------");
             mx410.Drive();
+            mx410.Turn("right");
+            mx410.Stop();
+            Console.WriteLine("-------------------------");
             trx1500.Drive();
+            trx1500.Turn("right");
+            trx1500.Stop();
         }
     }
 }
