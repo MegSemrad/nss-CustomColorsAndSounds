@@ -7,15 +7,12 @@ namespace CustomColorsAndSounds
     {
         public double BatteryKWh { get; set; }
         public List<string> electricVehicles { get; } = new List<string>();
+        public int CurrentChargePercentage { get; set; }
 
-        public void CurrentChargePercentage()
-        {
-            Console.WriteLine($"The {nameof(Zero)}'s current charge is 50%");
-        }
 
         public void ChargeBattery()
         {
-            Console.WriteLine($"The {nameof(Zero)}'s current charge is 100%");
+            CurrentChargePercentage = 100;
         }
 
         public override void Drive()

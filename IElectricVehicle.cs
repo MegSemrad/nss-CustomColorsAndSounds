@@ -5,7 +5,7 @@ namespace CustomColorsAndSounds
     public interface IElectricVehcile
     {
         List<string> electricVehicles { get; }
-        void CurrentChargePercentage();
+        int CurrentChargePercentage { get; }
         void ChargeBattery();
     }
 }
