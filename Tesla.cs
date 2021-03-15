@@ -1,14 +1,22 @@
 using System;
+using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
-    public class Tesla : Vehicle
+    public class Tesla : Vehicle, IElectricVehcile
     {
         public double BatteryKWh { get; set; }
 
+        public List<string> electricVehicles { get; } = new List<string>();
+
+        public void CurrentChargePercentage()
+        {
+            Console.WriteLine("Current charge is 50%");
+        }
+
         public void ChargeBattery()
         {
-            // method definition omitted
+            Console.WriteLine("Current charge is 100%");
         }
 
         public override void Drive()
