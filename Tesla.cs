@@ -11,12 +11,12 @@ namespace CustomColorsAndSounds
 
         public void CurrentChargePercentage()
         {
-            Console.WriteLine("Current charge is 50%");
+            Console.WriteLine($"The {nameof(Tesla)}'s current charge is 50%");
         }
 
         public void ChargeBattery()
         {
-            Console.WriteLine("Current charge is 100%");
+            Console.WriteLine($"The {nameof(Tesla)}'s current charge is 100%");
         }
 
         public override void Drive()

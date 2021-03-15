@@ -60,20 +60,20 @@ namespace CustomColorsAndSounds
             };
 
             Console.WriteLine("Electric Vehicles");
-            foreach (ElectricVehcile ev in electricVehicles)
+            foreach (IElectricVehcile ev in electricVehicles)
             {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
+                ev.CurrentChargePercentage();
             }
 
-            foreach (ElectricVehcile ev in electricVehicles)
+            foreach (IElectricVehcile ev in electricVehicles)
             {
                 // This should charge the vehicle to 100%
                 ev.ChargeBattery();
             }
 
-            foreach (ElectricVehcile ev in electricVehicles)
+            foreach (IElectricVehcile ev in electricVehicles)
             {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
+                ev.CurrentChargePercentage();
             }
 
             /***********************************************/

@@ -6,5 +6,6 @@ namespace CustomColorsAndSounds
     {
         List<string> electricVehicles { get; }
         void CurrentChargePercentage();
+        void ChargeBattery();
     }
 }
