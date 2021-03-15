@@ -12,12 +12,14 @@ namespace CustomColorsAndSounds
                 BatteryKWh = 4.5,
                 MainColor = "grey",
                 MaximumOccupancy = "two",
+                CurrentChargePercentage = 43,
             };
             Tesla modelS = new Tesla()
             {
                 BatteryKWh = 5.0,
                 MainColor = "black",
                 MaximumOccupancy = "four",
+                CurrentChargePercentage = 21,
             };
             Cessna mx410 = new Cessna()
             {
@@ -62,7 +64,7 @@ namespace CustomColorsAndSounds
             Console.WriteLine("Electric Vehicles");
             foreach (IElectricVehcile ev in electricVehicles)
             {
-                ev.CurrentChargePercentage();
+                Console.WriteLine($"Charge: {ev.CurrentChargePercentage}%");
             }
 
             foreach (IElectricVehcile ev in electricVehicles)
@@ -73,7 +75,7 @@ namespace CustomColorsAndSounds
 
             foreach (IElectricVehcile ev in electricVehicles)
             {
-                ev.CurrentChargePercentage();
+                Console.WriteLine($"After Charge: {ev.CurrentChargePercentage}%");
             }
 
             /***********************************************/
