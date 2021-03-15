@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
-    public interface IElectricVehcile
+    public interface IElectricVehicle
     {
         List<string> electricVehicles { get; }
         int CurrentChargePercentage { get; }

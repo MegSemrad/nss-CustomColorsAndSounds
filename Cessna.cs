@@ -1,14 +1,17 @@
 using System;
+using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
-    public class Cessna : Vehicle
+    public class Cessna : Vehicle, IGasVehicle
     {
         public double FuelCapacity { get; set; }
+        public List<string> gasVehicles { get; } = new List<string>();
+        public int CurrentTankPercentage { get; set; }
 
         public void RefuelTank()
         {
-            // method definition omitted
+            CurrentTankPercentage = 100;
         }
 
         public override void Drive()

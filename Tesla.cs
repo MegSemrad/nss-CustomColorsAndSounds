@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
-    public class Tesla : Vehicle, IElectricVehcile
+    public class Tesla : Vehicle, IElectricVehicle
     {
         public double BatteryKWh { get; set; }
 
