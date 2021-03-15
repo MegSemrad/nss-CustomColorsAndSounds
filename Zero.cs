@@ -1,14 +1,21 @@
 using System;
+using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
-    public class Zero : Vehicle  // Electric motorcycle
+    public class Zero : Vehicle, IElectricVehcile  // Electric motorcycle
     {
         public double BatteryKWh { get; set; }
+        public List<string> electricVehicles { get; } = new List<string>();
+
+        public void CurrentChargePercentage()
+        {
+            Console.WriteLine($"The {nameof(Zero)}'s current charge is 50%");
+        }
 
         public void ChargeBattery()
         {
-            // method definition omitted
+            Console.WriteLine($"The {nameof(Zero)}'s current charge is 100%");
         }
 
         public override void Drive()

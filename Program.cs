@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CustomColorsAndSounds
 {
@@ -46,6 +47,61 @@ namespace CustomColorsAndSounds
             trx1500.Drive();
             trx1500.Turn("right");
             trx1500.Stop();
+
+
+
+            /***********************************************/
+
+
+
+            List<IElectricVehcile> electricVehicles = new List<IElectricVehcile>()
+            {
+                fxs, modelS
+            };
+
+            Console.WriteLine("Electric Vehicles");
+            foreach (IElectricVehcile ev in electricVehicles)
+            {
+                ev.CurrentChargePercentage();
+            }
+
+            foreach (IElectricVehcile ev in electricVehicles)
+            {
+                // This should charge the vehicle to 100%
+                ev.ChargeBattery();
+            }
+
+            foreach (IElectricVehcile ev in electricVehicles)
+            {
+                ev.CurrentChargePercentage();
+            }
+
+            /***********************************************/
+
+            // Ram ram = new Ram();
+            // Cessna cessna150 = new Cessna();
+
+            // List <???> gasVehicles = new List<???> () 
+            // {
+            //     ram, cessna150
+            // };
+
+            // Console.WriteLine("Gas Vehicles");
+            // foreach (??? gv in gasVehicles)
+            // {
+            //     Console.WriteLine($"{gv.CurrentTankPercentage}");
+            // }
+
+            // foreach (??? gv in gasVehicles)
+            // {
+            //     // This should completely refuel the gas tank
+            //     gv.RefuelTank();
+            // }
+
+            // foreach (??? gv in gasVehicles)
+            // {
+            //     Console.WriteLine($"{gv.CurrentTankPercentage}");
+            // }
         }
     }
 }
